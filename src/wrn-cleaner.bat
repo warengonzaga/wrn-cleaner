@@ -1,6 +1,7 @@
 cls
 @echo off
-title MS365 PC Cleaner v0.1
+set appname=WRN
+title %appname% PC Cleaner v0.1
 goto mainMenu
 
 :mainMenu
