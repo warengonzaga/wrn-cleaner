@@ -2,6 +2,7 @@ cls
 @echo off
 set appname=WRN
 title %appname% PC Cleaner v0.1
+set appvers=v0.1
 goto mainMenu
 
 :mainMenu
