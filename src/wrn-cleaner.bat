@@ -10,7 +10,7 @@ goto mainMenu
 cls
 echo =========================
 echo %appname% PC Cleaner %appvers%
-echo by Waren Gonzaga
+echo by %dev%
 echo =========================
 color c
 echo Tools and Optimization
