@@ -10,10 +10,10 @@ goto mainMenu
 
 :mainMenu
 cls
-echo =========================
-echo %appname% PC Cleaner %appvers%
-echo by %dev%
-echo =========================
+echo # =========================
+echo # %appname% PC Cleaner %appvers%
+echo # by %dev%
+echo # =========================
 color # %uicolor%
 echo # %desc%
 echo #
