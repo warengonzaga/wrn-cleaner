@@ -3,6 +3,7 @@ cls
 set appname=WRN
 set appvers=v0.1
 set dev=Waren Gonzaga
+set desc=An Open Source Best PC Cleaner
 set uicolor=a
 title %appname% PC Cleaner %appvers%
 goto mainMenu
@@ -13,9 +14,9 @@ echo =========================
 echo %appname% PC Cleaner %appvers%
 echo by %dev%
 echo =========================
-echo Tools and Optimization
-echo .
 color # %uicolor%
+echo # %desc%
+echo #
 echo type auto for one click optimization and clean
 set/p "menu=> "
 if %menu%==auto goto autOp
