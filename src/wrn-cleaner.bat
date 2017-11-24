@@ -1,14 +1,14 @@
 cls
 @echo off
 set appname=WRN
-title %appname% PC Cleaner v0.1
 set appvers=v0.1
+title %appname% PC Cleaner %appvers%
 goto mainMenu
 
 :mainMenu
 cls
 echo =========================
-echo WRN PC Cleaner v0.1
+echo %appname% PC Cleaner %appvers%
 echo by Waren Gonzaga
 echo =========================
 color c
