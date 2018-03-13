@@ -1,4 +1,4 @@
-# WRN-Cleaner
+# WRN Cleaner
 All-In-One Batch Script PC Maintenance and Cleaner
 
 ## Basic Features

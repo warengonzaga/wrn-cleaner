@@ -1,0 +1,12 @@
+{
+    "config":{
+        "filename":"wrn_cleaner",
+        "title":"WRN Cleaner",
+        "version":"v.1.0.0",
+        "author":"Waren Gonzaga",
+        "facebook":"@warengonzagaofficialpage",
+        "twitter":"@waren_gonzaga",
+        "github":"@warengonzaga",
+        "email":"warengonzaga.dev@gmail.com"
+    }
+}
