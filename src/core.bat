@@ -8,38 +8,51 @@ cls
 
 REM | Setup Variables
 set appname=WRN
-set appvers=v1.0.0 (Beta)
+set appvers=v1.0.0
+set appstat=Beta
 set dev=Waren Gonzaga
 set desc=An Open Source Best PC Cleaner
 set uicolor=a
 set cliN=$%appname%Cleaner
-set divider==========================
-title %appname% PC Cleaner %appvers%
+set divider===============================
+title %appname% PC Cleaner %appvers% - %appstat%
 
-REM | Checking Admin Previlege
-for /f "tokens=1,2*" %%V in ('bcdedit') do set admincheck=%%V
-if (%admincheck%)==(Access) goto notAdmin
-
-REM | After checking go to main menu
-goto mainMenu
-
-REM | Not Admin Error Message
-:notAdmin
-cls
 @echo off
+color b
+echo Administrative permissions required. Detecting permissions.
+ping localhost -n 2 >NUL
+cls
+echo Administrative permissions required. Detecting permissions..
+ping localhost -n 2 >NUL
+cls
+echo Administrative permissions required. Detecting permissions...
+ping localhost -n 2 >NUL
+net session >nul 2>&1
+if %errorLevel% == 0 (
+echo Administrator privileges found!
+echo Starting the program...
+ping localhost -n 2 >NUL
+goto mainMenu
+) else (
+cls
 color c
 echo # %divider%
-echo # %appname% PC Cleaner %appvers%
+echo # %appname% PC Cleaner %appvers% - %appstat%
 echo # by %dev%
 echo # %divider%
+echo #
 echo # ERROR * ERROR * ERROR * ERROR * ERROR * ERROR
+echo #
 echo # Current user permissions to execute this .bat file are inadequate.
 echo # This .bat file must be run with administrative privileges.
 echo # Close this program and run it as administrator.
 echo # Contact the developer to assist you...
+echo #
 echo # ERROR * ERROR * ERROR * ERROR * ERROR * ERROR
-pause >nul
-goto mainMenu
+echo #
+pause
+exit
+)
 
 REM =============================
 REM Main Menu
@@ -47,7 +60,7 @@ REM =============================
 :mainMenu
 cls
 echo # %divider%
-echo # %appname% PC Cleaner %appvers%
+echo # %appname% PC Cleaner %appvers% - %appstat%
 echo # by %dev%
 echo # %divider%
 color %uicolor%
@@ -70,31 +83,67 @@ REM =============================
 cls
 echo # Checking files...
 echo # %divider%
+echo # Running.
+echo #
+ping localhost -n 2 >NUL
+cls
+echo # Checking files...
+echo # %divider%
+echo # Running..
+ping localhost -n 2 >NUL
+cls
+echo # Checking files...
+echo # %divider%
 echo # Running...
-timeout /t 3 /nobreak> null
+echo #
+ping localhost -n 2 >NUL
+REM echo # Running...
+REM timeout /t 3 /nobreak> null
 tree
 timeout /t 3 /nobreak> null
-goto aDefrag
+goto aDiskClean
 
 REM Automatic Defragment Function
 :aDefrag
+cls
+echo # Auto Cleaning. [Defragment]
+echo # %divider%
+echo # Running.
+ping localhost -n 2 >NUL
+cls
+echo # Auto Cleaning.. [Defragment]
+echo # %divider%
+echo # Running..
+ping localhost -n 2 >NUL
 cls
 echo # Auto Cleaning... [Defragment]
 echo # %divider%
 echo # Running...
 echo #
+ping localhost -n 2 >NUL
 defrag /C /U /V
-pause>null
 timeout /t 3 /nobreak> null
 goto aDiskClean
 
 REM Automatic DiskClean Function
 :aDiskClean
 cls
+echo # Auto Cleaning. [Disk Cleanup]
+echo # %divider%
+echo # Running.
+echo #
+ping localhost -n 2 >NUL
+cls
+echo # Auto Cleaning.. [Disk Cleanup]
+echo # %divider%
+echo # Running..
+ping localhost -n 2 >NUL
+cls
 echo # Auto Cleaning... [Disk Cleanup]
 echo # %divider%
 echo # Running...
 echo #
+ping localhost -n 2 >NUL
 cleanmgr /d%driveClean%
 timeout /t 3 /nobreak> null
 goto aRecyleBin
@@ -102,10 +151,21 @@ goto aRecyleBin
 REM Automatic Empty Recyle Bin
 :aRecyleBin
 cls
+echo # Auto Cleaning. [Recycle Bin]
+echo # %divider%
+echo # Running.
+ping localhost -n 2 >NUL
+cls
+echo # Auto Cleaning.. [Recycle Bin]
+echo # %divider%
+echo # Running..
+ping localhost -n 2 >NUL
+cls
 echo # Auto Cleaning... [Recycle Bin]
 echo # %divider%
 echo # Running...
 echo #
+ping localhost -n 2 >NUL
 echo y | rd /s %systemdrive%\$Recycle.bin
 timeout /t 3 /nobreak> null
 goto aTempClean
@@ -117,6 +177,24 @@ echo # Auto Cleaning... [Temp Folder]
 echo # %divider%
 echo # Running...
 echo #
+
+
+cls
+echo # Auto Cleaning. [Temp Folder]
+echo # %divider%
+echo # Running.
+ping localhost -n 2 >NUL
+cls
+echo # Auto Cleaning.. [Temp Folder]
+echo # %divider%
+echo # Running..
+ping localhost -n 2 >NUL
+cls
+echo # Auto Cleaning... [Temp Folder]
+echo # %divider%
+echo # Running...
+echo #
+ping localhost -n 2 >NUL
 del %temp%\*.*/s/q
 @ping 127.0.0.1 -n 2 -w 100 > nul
 @ping 127.0.0.1 -n %1% -w 100 > nul

@@ -6,3 +6,6 @@ All-In-One Batch Script PC Maintenance and Cleaner
 * DiskClean
 * Windows Error Log Cleaner
 * Recycle Bin Cleaner
+
+## Future Features
+* Auto shutdown when done.
