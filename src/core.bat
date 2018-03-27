@@ -1,5 +1,5 @@
 REM =============================
-REM WRN Cleaner v.1.0.0
+REM WRN Cleaner v.1.5.0
 REM By Waren Gonzaga
 REM =============================
 
@@ -173,13 +173,6 @@ goto aTempClean
 REM Automatic Empty Temp Function
 :aTempClean
 cls
-echo # Auto Cleaning... [Temp Folder]
-echo # %divider%
-echo # Running...
-echo #
-
-
-cls
 echo # Auto Cleaning. [Temp Folder]
 echo # %divider%
 echo # Running.
@@ -206,21 +199,47 @@ REM Automatic Empty Prefetch Function
 cls
 echo # Auto Cleaning... [Prefetch Folder]
 echo # %divider%
+echo # Running.
+echo # 
+ping localhost -n 2 >NUL
+cls
+echo # Auto Cleaning... [Prefetch Folder]
+echo # %divider%
+echo # Running..
+echo # 
+ping localhost -n 2 >NUL
+cls
+echo # Auto Cleaning... [Prefetch Folder]
+echo # %divider%
 echo # Running...
 echo # 
+ping localhost -n 2 >NUL
 del C:\Windows\prefetch\*.*/s/q
 @ping 127.0.0.1 -n 2 -w 100 > nul
 @ping 127.0.0.1 -n %1% -w 100 > nul
 timeout /t 3 /nobreak> null
 goto aWindowsLogs
 
-REM Automatic Cleaing the Windows Logs
+REM Automatic Cleaning the Windows Logs
 :aWindowsLogs
+cls
+echo # Auto Cleaning... [Windows Logs]
+echo # %divider%
+echo # Running.
+echo #
+ping localhost -n 2 >NUL
+cls
+echo # Auto Cleaning... [Windows Logs]
+echo # %divider%
+echo # Running..
+echo #
+ping localhost -n 2 >NUL
 cls
 echo # Auto Cleaning... [Windows Logs]
 echo # %divider%
 echo # Running...
 echo #
+ping localhost -n 2 >NUL
 for /F "tokens=*" %%G in ('wevtutil.exe el') DO (call :aWindowsLogs_cleaner "%%G")
 goto doneCleaning
 
