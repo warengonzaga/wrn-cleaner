@@ -197,13 +197,13 @@ goto aPrefetch
 REM Automatic Empty Prefetch Function
 :aPrefetch
 cls
-echo # Auto Cleaning... [Prefetch Folder]
+echo # Auto Cleaning. [Prefetch Folder]
 echo # %divider%
 echo # Running.
 echo # 
 ping localhost -n 2 >NUL
 cls
-echo # Auto Cleaning... [Prefetch Folder]
+echo # Auto Cleaning.. [Prefetch Folder]
 echo # %divider%
 echo # Running..
 echo # 
@@ -218,18 +218,41 @@ del C:\Windows\prefetch\*.*/s/q
 @ping 127.0.0.1 -n 2 -w 100 > nul
 @ping 127.0.0.1 -n %1% -w 100 > nul
 timeout /t 3 /nobreak> null
-goto aWindowsLogs
+goto aCheckDisk
 
-REM Automatic Cleaning the Windows Logs
-:aWindowsLogs
+REM Automatic Check Disk Function
+:aCheckDisk
 cls
-echo # Auto Cleaning... [Windows Logs]
+echo # Auto Check and Repair. [Check Disk]
 echo # %divider%
 echo # Running.
 echo #
 ping localhost -n 2 >NUL
 cls
-echo # Auto Cleaning... [Windows Logs]
+echo # Auto Check and Repair.. [Check Disk]
+echo # %divider%
+echo # Running..
+echo #
+ping localhost -n 2 >NUL
+cls
+echo # Auto Check and Repair... [Check Disk]
+echo # %divider%
+echo # Running...
+echo #
+ping localhost -n 2 >NUL
+chkdsk /r
+goto aWindowsLogs
+
+REM Automatic Cleaning the Windows Logs
+:aWindowsLogs
+cls
+echo # Auto Cleaning. [Windows Logs]
+echo # %divider%
+echo # Running.
+echo #
+ping localhost -n 2 >NUL
+cls
+echo # Auto Cleaning.. [Windows Logs]
 echo # %divider%
 echo # Running..
 echo #
