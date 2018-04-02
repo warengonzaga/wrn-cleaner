@@ -101,7 +101,7 @@ REM echo # Running...
 REM timeout /t 3 /nobreak> null
 tree
 timeout /t 3 /nobreak> null
-goto aDiskClean
+goto addOption
 
 REM Automatic Defragment Function
 :aDefrag
@@ -218,29 +218,6 @@ del C:\Windows\prefetch\*.*/s/q
 @ping 127.0.0.1 -n 2 -w 100 > nul
 @ping 127.0.0.1 -n %1% -w 100 > nul
 timeout /t 3 /nobreak> null
-goto aCheckDisk
-
-REM Automatic Check Disk Function
-:aCheckDisk
-cls
-echo # Auto Check and Repair. [Check Disk]
-echo # %divider%
-echo # Running.
-echo #
-ping localhost -n 2 >NUL
-cls
-echo # Auto Check and Repair.. [Check Disk]
-echo # %divider%
-echo # Running..
-echo #
-ping localhost -n 2 >NUL
-cls
-echo # Auto Check and Repair... [Check Disk]
-echo # %divider%
-echo # Running...
-echo #
-ping localhost -n 2 >NUL
-chkdsk /r
 goto aWindowsLogs
 
 REM Automatic Cleaning the Windows Logs
@@ -264,14 +241,99 @@ echo # Running...
 echo #
 ping localhost -n 2 >NUL
 for /F "tokens=*" %%G in ('wevtutil.exe el') DO (call :aWindowsLogs_cleaner "%%G")
-goto doneCleaning
+goto addOption
 
 REM Cleaner of Windows Logs
 :aWindowsLogs_cleaner
 echo clearing %1
 wevtutil.exe cl %1
 goto :eof
+goto addOption
+
+REM Additional Option Screen
+:addOption
+cls
+echo # %divider%
+echo # %appname% PC Cleaner %appvers%
+echo # by %dev%
+echo # %divider%
+color %uicolor%
+echo #
+echo # The cleaning is almost complete!
+echo # What would you like to do?
+echo # 1 - Shutdown
+echo # 2 - Reboot
+echo # 3 - Back to Menu
+echo # 4 - Exit (default)
+echo #
+set/p "addOption=# %cliN%> "
+if %addOption%==1 goto shutdownOption
+if %addOption%==2 goto rebootOption
+if %addOption%==3 goto doneCleaning
+if %addOption%==4 goto exitProgram
 goto doneCleaning
+
+REM Shutdown Option
+:shutdownOption
+cls
+echo # %divider%
+echo # %appname% PC Cleaner %appvers%
+echo # by %dev%
+echo # %divider%
+color %uicolor%
+echo #
+echo # Shutting Down.
+cls
+echo # %divider%
+echo # %appname% PC Cleaner %appvers%
+echo # by %dev%
+echo # %divider%
+color %uicolor%
+echo #
+echo # Shutting Down..
+ping localhost -n 2 >NUL
+cls
+echo # %divider%
+echo # %appname% PC Cleaner %appvers%
+echo # by %dev%
+echo # %divider%
+color %uicolor%
+echo #
+echo # Shutting Down...
+ping localhost -n 2 >NUL
+shutdown -s -t 10 -c "PC Will Shutdown..."
+goto exitProgram
+
+REM Reboot Option
+:rebootOption
+cls
+echo # %divider%
+echo # %appname% PC Cleaner %appvers%
+echo # by %dev%
+echo # %divider%
+color %uicolor%
+echo #
+echo # Rebooting.
+cls
+echo # %divider%
+echo # %appname% PC Cleaner %appvers%
+echo # by %dev%
+echo # %divider%
+color %uicolor%
+echo #
+echo # Rebooting..
+ping localhost -n 2 >NUL
+cls
+echo # %divider%
+echo # %appname% PC Cleaner %appvers%
+echo # by %dev%
+echo # %divider%
+color %uicolor%
+echo #
+echo # Rebooting...
+ping localhost -n 2 >NUL
+shutdown -r -t 10 -c "PC Will Reboot..."
+goto exitProgram
 
 REM Successful Cleaning Screen
 :doneCleaning
