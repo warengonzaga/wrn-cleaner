@@ -245,7 +245,7 @@ REM =============================
 cls
 echo # %divider%
 echo # %appname% PC Cleaner %appvers%
-echo # by %dev%0
+echo # by %dev%
 echo # %divider%
 color %uicolor%
 echo # %desc%

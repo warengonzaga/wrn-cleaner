@@ -1,5 +1,5 @@
 REM =============================
-REM WRN Cleaner v.1.5.0
+REM WRN Cleaner v.1.9.5
 REM By Waren Gonzaga
 REM =============================
 
@@ -8,7 +8,7 @@ cls
 
 REM | Setup Variables
 set appname=WRN
-set appvers=v1.0.0
+set appvers=v1.9.5
 set appstat=Beta
 set dev=Waren Gonzaga
 set desc=An Open Source Best PC Cleaner
@@ -65,15 +65,15 @@ echo # by %dev%
 echo # %divider%
 color %uicolor%
 echo # %desc%
-echo # Available commands "auto" and "manual"!
+REM echo # Available commands "auto" and "manual"!
 echo # Type "auto" to initiate auto operation.
-echo # Type "manual" to enter manual mode.
-echo # Type "dev" to enter dev/debug mode.
+REM echo # Type "manual" to enter manual mode.
+REM echo # Type "dev" to enter dev/debug mode.
 echo #
-set/p "mainMenu=# %cliN%> "
+set/p "mainMenu=# %cliN%> " || set mainMenu=auto
 if %mainMenu%==auto goto auto
-if %mainMenu%==manual goto mnlModeMenu
-if %mainMenu%==dev goto devModeMenu
+REM if %mainMenu%==manual goto mnlModeMenu
+REM if %mainMenu%==dev goto devModeMenu
 goto errMes01
 
 REM =============================
@@ -101,7 +101,7 @@ REM echo # Running...
 REM timeout /t 3 /nobreak> null
 tree
 timeout /t 3 /nobreak> null
-goto addOption
+goto aDefrag
 
 REM Automatic Defragment Function
 :aDefrag
@@ -146,17 +146,37 @@ echo #
 ping localhost -n 2 >NUL
 cleanmgr /d%driveClean%
 timeout /t 3 /nobreak> null
+goto aSystemFileChecker
+
+REM Automatic System File Checker
+:aSystemFileChecker
+cls
+echo # Auto System File Checker.   [Scanning PC]
+echo # %divider%
+echo # Running.
+ping localhost -n 2 >NUL
+cls
+echo # Auto System File Checker..  [Scanning PC]
+echo # %divider%
+echo # Running.
+ping localhost -n 2 >NUL
+cls
+echo # Auto System File Checker... [Scanning PC]
+echo # %divider%
+echo # Running.
+ping localhost -n 2 >NUL
+sfc /scannow
 goto aRecyleBin
 
 REM Automatic Empty Recyle Bin
 :aRecyleBin
 cls
-echo # Auto Cleaning. [Recycle Bin]
+echo # Auto Cleaning.   [Recycle Bin]
 echo # %divider%
 echo # Running.
 ping localhost -n 2 >NUL
 cls
-echo # Auto Cleaning.. [Recycle Bin]
+echo # Auto Cleaning..  [Recycle Bin]
 echo # %divider%
 echo # Running..
 ping localhost -n 2 >NUL
@@ -263,10 +283,10 @@ echo # The cleaning is almost complete!
 echo # What would you like to do?
 echo # 1 - Shutdown
 echo # 2 - Reboot
-echo # 3 - Back to Menu
-echo # 4 - Exit (default)
+echo # 3 - Back to Menu (default)
+echo # 4 - Exit
 echo #
-set/p "addOption=# %cliN%> "
+set/p "addOption=# %cliN%> " || set addOption=3
 if %addOption%==1 goto shutdownOption
 if %addOption%==2 goto rebootOption
 if %addOption%==3 goto doneCleaning
@@ -301,7 +321,8 @@ color %uicolor%
 echo #
 echo # Shutting Down...
 ping localhost -n 2 >NUL
-shutdown -s -t 10 -c "PC Will Shutdown..."
+shutdown -s -t 10 -c "PC Will Shutdown in 5 seconds..."
+timeout 10
 goto exitProgram
 
 REM Reboot Option
@@ -332,7 +353,8 @@ color %uicolor%
 echo #
 echo # Rebooting...
 ping localhost -n 2 >NUL
-shutdown -r -t 10 -c "PC Will Reboot..."
+shutdown -r -t 10 -c "PC Will Reboot in 5 seconds..."
+timeout 10
 goto exitProgram
 
 REM Successful Cleaning Screen
@@ -345,7 +367,7 @@ echo # %divider%
 color %uicolor%
 echo #
 echo # Done Auto Cleaning...
-timeout /t 5 /nobreak> null
+timeout /t 2 /nobreak> null
 goto mainMenu
 
 REM =============================
