@@ -10,3 +10,7 @@ All-In-One Batch Script PC Maintenance and Cleaner
 * Clean Prefetch Folder
 * System File Checker
 * Auto shutdown when done [Will Implement This].
+
+## To Do
+* White Label Option
+* Manual Mode
