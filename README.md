@@ -1,4 +1,4 @@
-# WRN Cleaner
+# WRN Cleaner | Beta Version 2.0.0
 All-In-One Batch Script PC Maintenance and Cleaner for Windows PC
 
 ## Basic Features
