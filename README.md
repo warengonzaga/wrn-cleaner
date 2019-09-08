@@ -1,8 +1,7 @@
 # WRN Cleaner | Beta Version 2.5.0 [![Developed by Waren Gonzaga](https://img.shields.io/badge/Developed%20by-Waren%20Gonzaga-blue.svg?longCache=true&style=for-the-badge)](https://facebook.com/warengonzagaofficialpage)
 
 [![GitHub Version](https://img.shields.io/github/release/WarenGonzaga/WRN-Cleaner.svg?style=for-the-badge)](https://github.com/WarenGonzaga/WRN-Cleaner/)
-[![GitHub](https://img.shields.io/github/license/WarenGonzaga/WRN-Cleaner.svg?style=for-the-badge)](https://github.com/WarenGonzaga/WRN-Cleaner)
-All-In-One Batch Script PC Maintenance and Cleaner for Windows PC
+[![GitHub](https://img.shields.io/github/license/WarenGonzaga/WRN-Cleaner.svg?style=for-the-badge)](https://github.com/WarenGonzaga/WRN-Cleaner)<br/><br/>All-In-One Batch Script PC Maintenance and Cleaner for Windows PC
 
 ## Basic Features
 * Defragment
