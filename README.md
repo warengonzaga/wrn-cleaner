@@ -1,5 +1,5 @@
 # WRN Cleaner
-All-In-One Batch Script PC Maintenance and Cleaner
+All-In-One Batch Script PC Maintenance and Cleaner for Windows PC
 
 ## Basic Features
 * Defragment
@@ -9,8 +9,17 @@ All-In-One Batch Script PC Maintenance and Cleaner
 * Clean Temp Folder
 * Clean Prefetch Folder
 * System File Checker
-* Auto shutdown when done [Will Implement This].
+* Auto Shutdown and Reboot When Done
+
+## Changelogs
+### v2.0.0 - 09/08/19
+* Add auto shutdown and reboot when done
+* Add new option screen before cleaning
+* Add Error Screen
+* Modify Title of the Program
+* Add Back to Main Menu and Exit Option
+* Few Minor Fixes
 
 ## To Do
-* White Label Option
+* White Label Option (Automated Script)
 * Manual Mode
