@@ -1,7 +1,7 @@
 REM =============================
 REM WRN Cleaner - https://github.com/WarenGonzaga/WRN-Cleaner
 REM All-In-One Batch Script Maintenance and Cleaner for Windows PC
-REM Version: 2.0.0
+REM Version: 2.5.0
 REM Github: https://github.com/WarenGonzaga/WRN-Cleaner
 REM Licensed Under The MIT License: http://opensource.org/licenses/MIT
 REM Copyright (c) 2019 Waren Gonzaga
@@ -18,7 +18,7 @@ REM =============================
 REM Setup Variables
 REM =============================
 set appname=WRN
-set appvers=v2.0.0
+set appvers=v2.5.0
 set appstat=Beta
 set dev=Waren Gonzaga
 set desc=An Open Source Best Windows PC Cleaner

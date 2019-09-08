@@ -1,6 +1,6 @@
 {
   "name": "wrn-cleaner",
-  "version": "2.0.0",
+  "version": "2.5.0",
   "description": "All-In-One Batch Script Maintenance and Cleaner for Windows PC",
   "main": "gulpfile.js",
   "scripts": {
