@@ -1,12 +1,11 @@
 {
-    "config":{
-        "filename":"wrn_cleaner",
-        "title":"WRN Cleaner",
-        "version":"v.1.0.0",
-        "author":"Waren Gonzaga",
-        "facebook":"@warengonzagaofficialpage",
-        "twitter":"@waren_gonzaga",
-        "github":"@warengonzaga",
-        "email":"warengonzaga.dev@gmail.com"
-    }
+    "filename":"wrn_cleaner",
+    "title":"WRN",
+    "version":"v2.0.0",
+    "status":"Beta",
+    "dev":"Waren Gonzaga",
+    "description":"An Open Source Best Windows PC Cleaner",
+    "uicolor":"a",
+    "infouicolor":"b",
+    "erruicolor":"c"
 }

@@ -1,3 +1,31 @@
+REM =============================
+REM WRN Cleaner - https://github.com/WarenGonzaga/WRN-Cleaner
+REM All-In-One Batch Script Maintenance and Cleaner for Windows PC
+REM Version: 2.0.0
+REM Github: https://github.com/WarenGonzaga/WRN-Cleaner
+REM Licensed Under The MIT License: http://opensource.org/licenses/MIT
+REM Copyright (c) 2019 Waren Gonzaga
+REM 
+REM Facebook: @warengonzagaofficialpage
+REM Twitter: @waren_gonzaga
+REM Github: @warengonzaga
+REM Website: warengonzaga.com
+REM =============================
+
+cls
+@echo off
+REM =============================
+REM Setup Variables
+REM =============================
+set appname=WRN
+set appvers=v2.0.0
+set appstat=Beta
+set dev=Waren Gonzaga
+set desc=An Open Source Best Windows PC Cleaner
+set uicolor=a
+set infouicolor=b
+set erruicolor=c
+set cliN=$%appname%Cleaner
 set flchkdsc=This is to check how many files you have in your machine to predict how fast the cleaning is!
 set divider======================================
 title %appname% PC Cleaner %appvers% - %appstat%
