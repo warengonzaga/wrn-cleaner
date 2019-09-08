@@ -30,7 +30,7 @@ Download the repository and look for "**wrn_cleaner-vX.X.X.bat**" file and open 
 * Add Automation to Generate and Develop the Batch Script
 * Few Minor Bug Fixes
 
-### v2.0.0 - 09/08/19
+### Beta v2.0.0 - 09/08/19
 * Add auto shutdown and reboot when done
 * Add new option screen before cleaning
 * Add Error Screen
