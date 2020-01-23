@@ -1,14 +1,14 @@
 {
   "name": "wrn-cleaner",
-  "version": "2.5.0",
-  "description": "All-In-One Batch Script Maintenance and Cleaner for Windows PC",
+  "version": "3.0.0",
+  "description": "An open source best all-in-one Windows PC cleaner.",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/WarenGonzaga/WRN-Cleaner.git"
+    "url": "git+https://github.com/WarenGonzaga/wrn-cleaner.git"
   },
   "keywords": [
     "cleaner",
@@ -19,10 +19,10 @@
   "author": "Waren Gonzaga",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/WarenGonzaga/WRN-Cleaner/issues"
+    "url": "https://github.com/WarenGonzaga/wrn-cleaner/issues"
   },
-  "homepage": "https://github.com/WarenGonzaga/WRN-Cleaner",
-  "github": "https://github.com/WarenGonzaga/WRN-Cleaner",
+  "homepage": "https://github.com/WarenGonzaga/wrn-cleaner",
+  "github": "https://github.com/WarenGonzaga/wrn-cleaner",
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-clean": "^0.4.0",
