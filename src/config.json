@@ -1,10 +1,10 @@
 {
-    "filename":"wrn_cleaner",
+    "filename":"wrn-cleaner",
     "title":"WRN",
-    "version":"v2.5.0",
+    "version":"v3.0.0",
     "status":"Beta",
     "dev":"Waren Gonzaga",
-    "description":"An Open Source Best Windows PC Cleaner",
+    "description":"An open source best all-in-one Windows PC cleaner.",
     "uicolor":"a",
     "infouicolor":"b",
     "erruicolor":"c"

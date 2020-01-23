@@ -3,7 +3,7 @@ set divider======================================
 title %appname% PC Cleaner %appvers% - %appstat%
 
 @echo off
-color b
+color %infouicolor%
 echo Administrative permissions required. Detecting permissions.
 ping localhost -n 2 >NUL
 cls
@@ -20,7 +20,7 @@ ping localhost -n 2 >NUL
 goto mainMenu
 ) else (
 cls
-color c
+color %erruicolor%
 echo # %divider%
 echo # %appname% PC Cleaner %appvers% - %appstat%
 echo # by %dev%
