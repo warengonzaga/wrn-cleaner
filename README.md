@@ -1,4 +1,4 @@
-# WRN Cleaner [![Developed by Waren Gonzaga](https://img.shields.io/badge/Developed%20by-Waren%20Gonzaga-blue.svg?longCache=true&style=for-the-badge)](https://facebook.com/warengonzagaofficialpage)
+# WRN Cleaner [![Developed by Waren Gonzaga](https://img.shields.io/badge/Developed%20by-Waren%20Gonzaga-blue.svg?longCache=true&style=for-the-badge)](https://facebook.com/warengonzagaofficial)
 
 [![OS](https://img.shields.io/badge/OS-Windows-blue.svg?style=for-the-badge)](https://github.com/WarenGonzaga/Passview)
 [![GitHub Version](https://img.shields.io/github/release/WarenGonzaga/WRN-Cleaner.svg?style=for-the-badge)](https://github.com/WarenGonzaga/WRN-Cleaner/)
@@ -75,7 +75,7 @@ WRN Cleaner is licensed under MIT - <https://opensource.org/licenses/MIT>
 
 WRN Cleaner is Developed and Maintained by **Waren Gonzaga**
 
-* **Facebook:** <https://facebook.com/warengonzagaofficialpage>
+* **Facebook:** <https://facebook.com/warengonzagaofficial>
 * **Twitter:** <https://twitter.com/warengonzaga>
 * **Website:** <https://warengonzaga.com>
 * **Email:** dev(at)warengonzaga[.]com
