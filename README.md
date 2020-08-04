@@ -1,11 +1,6 @@
 # WRN Cleaner [![Developed by Waren Gonzaga](https://img.shields.io/badge/Developed%20by-Waren%20Gonzaga-blue.svg?longCache=true&style=for-the-badge)](https://facebook.com/warengonzagaofficial)
 
-[![OS](https://img.shields.io/badge/OS-Windows-blue.svg?style=for-the-badge)](https://github.com/WarenGonzaga/Passview)
-[![GitHub Version](https://img.shields.io/github/release/WarenGonzaga/WRN-Cleaner.svg?style=for-the-badge)](https://github.com/WarenGonzaga/WRN-Cleaner/)
-[![Github Star](https://img.shields.io/github/stars/WarenGonzaga/wrn-cleaner.svg?style=for-the-badge)](https://github.com/WarenGonzaga/Passview)
-[![Github Fork](https://img.shields.io/github/forks/WarenGonzaga/wrn-cleaner.svg?style=for-the-badge)](https://github.com/WarenGonzaga/Passview)
-[![License](https://img.shields.io/github/license/WarenGonzaga/WRN-Cleaner.svg?style=for-the-badge)](https://github.com/WarenGonzaga/WRN-Cleaner)
-[![Powered By](https://img.shields.io/badge/Powered%20By-GulpJS-orange.svg?style=for-the-badge)](https://gulpjs.com)
+[![OS](https://img.shields.io/badge/OS-Windows-blue.svg?style=for-the-badge)](https://github.com/WarenGonzaga/Passview) [![GitHub Version](https://img.shields.io/github/release/WarenGonzaga/WRN-Cleaner.svg?style=for-the-badge)](https://github.com/WarenGonzaga/WRN-Cleaner/) [![Github Star](https://img.shields.io/github/stars/WarenGonzaga/wrn-cleaner.svg?style=for-the-badge)](https://github.com/WarenGonzaga/Passview) [![Github Fork](https://img.shields.io/github/forks/WarenGonzaga/wrn-cleaner.svg?style=for-the-badge)](https://github.com/WarenGonzaga/Passview) [![License](https://img.shields.io/github/license/WarenGonzaga/WRN-Cleaner.svg?style=for-the-badge)](https://github.com/WarenGonzaga/WRN-Cleaner) [![Powered By](https://img.shields.io/badge/Powered%20By-GulpJS-orange.svg?style=for-the-badge)](https://gulpjs.com)
 
 All-In-One Batch Script PC Maintenance and Cleaner for Windows PC
 
@@ -82,4 +77,4 @@ WRN Cleaner is Developed and Maintained by **Waren Gonzaga**
 
 ---
 
-**</>** with **<3** by **Waren Gonzaga**
+:computer: with :heart: by **Waren Gonzaga** with **YHWH**
