@@ -77,4 +77,4 @@ WRN Cleaner is Developed and Maintained by **Waren Gonzaga**
 
 ---
 
-:computer: with :heart: by **Waren Gonzaga** with **YHWH**
+:computer: with :heart: by **Waren Gonzaga** with **YHWH** :pray:
