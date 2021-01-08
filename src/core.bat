@@ -123,31 +123,6 @@ echo #
 ping localhost -n 2 >NUL
 tree
 timeout /t 3 /nobreak> null
-goto aDefrag
-
-REM =============================
-REM Automatic Defragment Function
-REM =============================
-:aDefrag
-cls
-title %appname% PC Cleaner %appvers% - %appstat% [Defragment]
-echo # Auto Cleaning. [Defragment]
-echo # %divider%
-echo # Running.
-ping localhost -n 2 >NUL
-cls
-echo # Auto Cleaning.. [Defragment]
-echo # %divider%
-echo # Running..
-ping localhost -n 2 >NUL
-cls
-echo # Auto Cleaning... [Defragment]
-echo # %divider%
-echo # Running...
-echo #
-ping localhost -n 2 >NUL
-defrag /C /U /V
-timeout /t 3 /nobreak> null
 goto aDiskClean
 
 REM =============================
@@ -173,6 +148,31 @@ echo # Running...
 echo #
 ping localhost -n 2 >NUL
 cleanmgr /d%driveClean%
+timeout /t 3 /nobreak> null
+goto aDefrag
+
+REM =============================
+REM Automatic Defragment Function
+REM =============================
+:aDefrag
+cls
+title %appname% PC Cleaner %appvers% - %appstat% [Defragment]
+echo # Auto Cleaning. [Defragment]
+echo # %divider%
+echo # Running.
+ping localhost -n 2 >NUL
+cls
+echo # Auto Cleaning.. [Defragment]
+echo # %divider%
+echo # Running..
+ping localhost -n 2 >NUL
+cls
+echo # Auto Cleaning... [Defragment]
+echo # %divider%
+echo # Running...
+echo #
+ping localhost -n 2 >NUL
+defrag /C /U /V
 timeout /t 3 /nobreak> null
 goto aSystemFileChecker
 
