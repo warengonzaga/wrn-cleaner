@@ -1,10 +1,10 @@
 REM =============================
 REM WRN Cleaner - https://github.com/WarenGonzaga/wrn-cleaner
 REM An open source best all-in-one Windows PC cleaner.
-REM Version: 3.0.0
+REM Version: 3.0.7-beta.1
 REM Github: https://github.com/WarenGonzaga/wrn-cleaner
 REM Licensed Under The MIT License: http://opensource.org/licenses/MIT
-REM Copyright (c) 2020 Waren Gonzaga
+REM Copyright (c) 2021 Waren Gonzaga
 REM 
 REM Facebook: @warengonzagaofficialpage
 REM Twitter: @warengonzaga
@@ -154,31 +154,6 @@ echo #
 ping localhost -n 2 >NUL
 tree
 timeout /t 3 /nobreak> null
-goto aDefrag
-
-REM =============================
-REM Automatic Defragment Function
-REM =============================
-:aDefrag
-cls
-title %appname% PC Cleaner %appvers% - %appstat% [Defragment]
-echo # Auto Cleaning. [Defragment]
-echo # %divider%
-echo # Running.
-ping localhost -n 2 >NUL
-cls
-echo # Auto Cleaning.. [Defragment]
-echo # %divider%
-echo # Running..
-ping localhost -n 2 >NUL
-cls
-echo # Auto Cleaning... [Defragment]
-echo # %divider%
-echo # Running...
-echo #
-ping localhost -n 2 >NUL
-defrag /C /U /V
-timeout /t 3 /nobreak> null
 goto aDiskClean
 
 REM =============================
@@ -204,6 +179,31 @@ echo # Running...
 echo #
 ping localhost -n 2 >NUL
 cleanmgr /d%driveClean%
+timeout /t 3 /nobreak> null
+goto aDefrag
+
+REM =============================
+REM Automatic Defragment Function
+REM =============================
+:aDefrag
+cls
+title %appname% PC Cleaner %appvers% - %appstat% [Defragment]
+echo # Auto Cleaning. [Defragment]
+echo # %divider%
+echo # Running.
+ping localhost -n 2 >NUL
+cls
+echo # Auto Cleaning.. [Defragment]
+echo # %divider%
+echo # Running..
+ping localhost -n 2 >NUL
+cls
+echo # Auto Cleaning... [Defragment]
+echo # %divider%
+echo # Running...
+echo #
+ping localhost -n 2 >NUL
+defrag /C /U /V
 timeout /t 3 /nobreak> null
 goto aSystemFileChecker
 
