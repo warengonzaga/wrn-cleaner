@@ -4,6 +4,11 @@
 
 All-In-One Batch Script PC Maintenance and Cleaner for Windows PC
 
+## Documentation
+
+> The complete documentation can be found here:
+> [docs.warengonzaga.com/wrn-cleaner](https://docs.warengonzaga.com/wrn-cleaner)
+
 ## Features
 
 * Defragment
@@ -27,14 +32,6 @@ Download the repository and look for **``"wrn_cleaner-vX.X.X.bat"``** file and o
 * When you think you are satisfy, just do **``"gulp build"``** or **``"gulp"``** to initiate the building process.
 * If you want to reset the building process just do **``"gulp cleandev"``**.
 
-## To Do
-
-* Manual Mode
-* Code Refactor
-* Gulp Options
-* CI (Travis)
-* More... (have suggestions? let me know!)
-
 ## Contributing
 
 Contributions are welcome, create a pull request to this repo and I will review your code.
@@ -42,6 +39,14 @@ Contributions are welcome, create a pull request to this repo and I will review 
 ## Issues
 
 If you're facing a problem in using WRN Cleaner please let me know by creating an issue in this github repository. I'm happy to help you! Don't forget to provide some screenshot or error logs of it!
+
+## Supporters
+
+<!--markdownlint-disable MD033 -->
+<a href="https://gitbook.com" target="_blank">
+    <img src="./github/supporters/../../.github/supporters/gitbook.png" width="200"/>
+</a>
+<!--markdownlint-enable MD033 -->
 
 ## Community
 
