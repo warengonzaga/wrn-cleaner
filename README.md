@@ -1,6 +1,6 @@
-# WRN Cleaner [![Developed by Waren Gonzaga](https://img.shields.io/badge/Developed%20by-Waren%20Gonzaga-blue.svg?longCache=true&style=for-the-badge)](https://facebook.com/warengonzagaofficial)
+# WRN Cleaner
 
-[![OS](https://img.shields.io/badge/OS-Windows-blue.svg?style=for-the-badge)](https://github.com/WarenGonzaga/Passview) [![GitHub Version](https://img.shields.io/github/release/WarenGonzaga/WRN-Cleaner.svg?style=for-the-badge)](https://github.com/WarenGonzaga/WRN-Cleaner/) [![Github Star](https://img.shields.io/github/stars/WarenGonzaga/wrn-cleaner.svg?style=for-the-badge)](https://github.com/WarenGonzaga/Passview) [![Github Fork](https://img.shields.io/github/forks/WarenGonzaga/wrn-cleaner.svg?style=for-the-badge)](https://github.com/WarenGonzaga/Passview) [![License](https://img.shields.io/github/license/WarenGonzaga/WRN-Cleaner.svg?style=for-the-badge)](https://github.com/WarenGonzaga/WRN-Cleaner) [![Powered By](https://img.shields.io/badge/Powered%20By-GulpJS-orange.svg?style=for-the-badge)](https://gulpjs.com)
+[![by Waren Gonzaga](https://img.shields.io/badge/by-Waren%20Gonzaga-blue.svg?longCache=true&style=flat-square)](https://bmc.xyz/warengonzaga) ![Version](https://img.shields.io/github/release/WarenGonzaga/wrn-cleaner.svg?style=flat-square) ![Stars](https://img.shields.io/github/stars/WarenGonzaga/wrn-cleaner.svg?style=flat-square) ![License](https://img.shields.io/github/license/WarenGonzaga/wrn-cleaner.svg?style=flat-square)
 
 All-In-One Batch Script PC Maintenance and Cleaner for Windows PC
 
@@ -47,19 +47,7 @@ If you're facing a problem in using WRN Cleaner please let me know by creating a
 
 Wanna see other projects I made? Join today!
 
-[![Community](https://discordapp.com/api/guilds/659684980137656340/widget.png?style=banner2)](https://bmc.xyz/l/wgofficialds)
-
-## Donate or Support
-
-If you love this project please consider to support the development by means of coffee. I spend and waste my time just to save your time! Be a sponsor or backer of this project. Just a cup of coffee!
-
-[![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg?style=for-the-badge)](https://paypal.me/warengonzagaofficial) [![Support](https://img.shields.io/badge/Support-Buy%20Me%20A%20Coffee-orange.svg?style=for-the-badge)](https://www.buymeacoffee.com/warengonzaga)
-
-## Supporters and Backers
-
-* ernest bigelow
-
-Wanna see your name here? [Just buy me a coffee](https://www.buymeacoffee.com/warengonzaga)!
+[![Community](https://discordapp.com/api/guilds/659684980137656340/widget.png?style=banner3)](https://bmc.xyz/warengonzaga)
 
 ## License
 
@@ -69,8 +57,8 @@ WRN Cleaner is licensed under MIT - <https://opensource.org/licenses/MIT>
 
 WRN Cleaner is Developed and Maintained by **[Waren Gonzaga](https://github.com/warengonzaga)**
 
-[![Facebook](https://img.shields.io/badge/facebook-%231877F2.svg?&style=for-the-badge&logo=facebook&logoColor=white)](https://facebook.com/warengonzagaofficial) [![Twitter](https://img.shields.io/badge/twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/warengonzaga) [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/warengonzagaofficial) [![YouTube](https://img.shields.io/badge/youtube-%23FF0000.svg?&style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/warengonzaga)
+[![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?&style=flat-square&logo=facebook&logoColor=white)](https://facebook.com/warengonzagaofficial) [![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?&style=flat-square&logo=twitter&logoColor=white)](https://twitter.com/warengonzaga) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?&style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/warengonzagaofficial) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?&style=flat-square&logo=youtube&logoColor=white)](https://youtube.com/warengonzaga) [![DEV](https://img.shields.io/badge/DEV-%23000000.svg?&style=flat-square&logo=dev.to&logoColor=white)](https://dev.to/warengonzaga) [![BMC](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-%23FFDD00.svg?&style=flat-square&logo=buy-me-a-coffee&logoColor=black)](https://dev.to/warengonzaga)
 
 ---
 
-:computer: Made with :heart: by Waren Gonzaga with **YHWH** :pray:
+:computer: Made with :heart: and :coffee: by Waren Gonzaga with **YHWH** :pray:
