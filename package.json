@@ -1,10 +1,12 @@
 {
   "name": "wrn-cleaner",
-  "version": "3.0.7-beta.6",
+  "version": "3.0.7-beta.7",
   "description": "An open source best all-in-one Windows PC cleaner.",
   "main": "gulpfile.js",
   "scripts": {
-    "build": "gulp build"
+    "build": "gulp build",
+    "clean": "gulp cleandev",
+    "help": "gulp --tasks"
   },
   "repository": {
     "type": "git",
