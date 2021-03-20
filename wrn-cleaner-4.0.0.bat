@@ -1,7 +1,7 @@
 REM =============================
 REM WRN Cleaner - https://github.com/WarenGonzaga/wrn-cleaner
 REM An open source best all-in-one Windows PC cleaner.
-REM Version: 3.0.7-beta.7
+REM Version: 4.0.0
 REM Github: https://github.com/WarenGonzaga/wrn-cleaner
 REM Licensed Under The MIT License: http://opensource.org/licenses/MIT
 REM Copyright (c) 2021 Waren Gonzaga
@@ -21,7 +21,7 @@ REM =============================
 REM Setup Variables
 REM =============================
 set appname=WRN
-set appvers=3.0.7-beta.7
+set appvers=4.0.0
 set appstat=Beta
 set dev=Waren Gonzaga
 set desc=An open source best all-in-one Windows PC cleaner.
@@ -29,7 +29,6 @@ set uicolor=a
 set infouicolor=b
 set erruicolor=c
 set cliN=$%appname%Cleaner
-set flchkdsc=This is to check how many files you have in your machine to predict how fast the cleaning is!
 set divider======================================
 title %appname% PC Cleaner %appvers% - %appstat%
 
@@ -45,29 +44,29 @@ echo Administrative permissions required. Detecting permissions...
 ping localhost -n 2 >NUL
 net session >nul 2>&1
 if %errorLevel% == 0 (
-echo Administrator privileges found!
-echo Starting the program...
-ping localhost -n 2 >NUL
-goto mainMenu
+    echo Administrator privileges found!
+    echo Starting the program...
+    ping localhost -n 2 >NUL
+    goto mainMenu
 ) else (
-cls
-color %erruicolor%
-echo # %divider%
-echo # %appname% PC Cleaner %appvers% - %appstat%
-echo # by %dev%
-echo # %divider%
-echo #
-echo # ERROR * ERROR * ERROR * ERROR * ERROR * ERROR
-echo #
-echo # Current user permissions to execute this .bat file are inadequate.
-echo # This .bat file must be run with administrative privileges.
-echo # Close this program and run it as administrator.
-echo # Contact the developer to assist you...
-echo #
-echo # ERROR * ERROR * ERROR * ERROR * ERROR * ERROR
-echo #
-pause
-exit
+    cls
+    color %erruicolor%
+    echo # %divider%
+    echo # %appname% PC Cleaner %appvers% - %appstat%
+    echo # by %dev%
+    echo # %divider%
+    echo #
+    echo # ERROR * ERROR * ERROR * ERROR * ERROR * ERROR
+    echo #
+    echo # Current user permissions to execute this .bat file are inadequate.
+    echo # This .bat file must be run with administrative privileges.
+    echo # Close this program and run it as administrator.
+    echo # Contact the developer to assist you...
+    echo #
+    echo # ERROR * ERROR * ERROR * ERROR * ERROR * ERROR
+    echo #
+    pause
+    exit
 )
 
 REM =============================
@@ -75,21 +74,23 @@ REM Main Menu
 REM =============================
 :mainMenu
 cls
+title %appname% PC Cleaner %appvers% - %appstat% [Main Menu]
 echo # %divider%
 echo # %appname% PC Cleaner %appvers% - %appstat%
 echo # by %dev%
 echo # %divider%
 color %uicolor%
 echo # %desc%
-REM echo # Available commands "auto" and "manual"!
-echo # Type "auto" to initiate auto operation.
-REM echo # Type "manual" to enter manual mode.
-REM echo # Type "dev" to enter dev/debug mode.
-echo # Type "exit" to exit the program.
+echo # %divider%
+echo # Please choose cleaning method!
 echo #
-set/p "mainMenu=# %cliN%> " || set mainMenu=auto
-if %mainMenu%==auto goto autoInit
-if %addOption%==exit goto exitProgram
+echo # Auto ....................... [1] (default)
+echo # Manual ..................... [?] (soon)
+echo # Exit ....................... [2]
+echo #
+set/p "mainMenu=# %cliN%> " || set mainMenu=1
+if %mainMenu%==1 set clean_method=Auto & goto autoInit
+if %addOption%==2 goto exitProgram
 pause>null
 goto errMes01
 REM if %mainMenu%==manual goto mnlModeMenu
@@ -101,21 +102,22 @@ REM =============================
 :autoInit
 cls
 title %appname% PC Cleaner %appvers% - %appstat% [Initial Setup]
-echo # Initial Option
 echo # %divider%
-echo # Please choose from the option below!
+echo # %appname% PC Cleaner %appvers% - %appstat%
+echo # by %dev%
 echo # %divider%
 color %infouicolor%
+echo # Please choose action after cleaning!
 echo #
-echo # 1 ........ [Auto Shutdown after Cleaning]
-echo # 2 ........ [Auto Reboot after Cleaning]
-echo # 3 ........ [Manual Shutdown/Reboot after Cleaning] (default)
-echo # 4 ........ [Back to Main Menu]
+echo # Auto Shutdown .............. [1]
+echo # Auto Reboot ................ [2]
+echo # Manual Shutdown/Reboot ..... [3]
+echo # Back to Main Menu .......... [4] (default)
 echo #
-set/p "autoInitVar=# %cliN%> " || set autoInitVar=3
-if %autoInitVar%==1 goto auto
-if %autoInitVar%==2 goto auto
-if %autoInitVar%==3 goto auto
+set/p "autoInitVar=# %cliN%> " || set autoInitVar=4
+if %autoInitVar%==1 set clean_action=Auto Shutdown & goto auto
+if %autoInitVar%==2 set clean_action=Auto Reboot & goto auto
+if %autoInitVar%==3 set clean_action=Manual Shutdown/Reboot & goto auto
 if %autoInitVar%==4 goto mainMenu
 pause>null
 goto errMes02
@@ -125,35 +127,17 @@ REM Automatic Functions
 REM =============================
 :auto
 cls
-title %appname% PC Cleaner %appvers% - %appstat% [Checking Files]
-echo # Checking files...
+title %appname% PC Cleaner %appvers% - %appstat% [Processing]
+echo # %divider%
+echo # %appname% PC Cleaner %appvers% - %appstat%
+echo # by %dev%
+echo # %divider%
+echo # [%clean_method%- %clean_action%]
 echo # %divider%
 color %uicolor%
-echo # %flchkdsc%
-echo #
-echo #
-echo # Running.
-echo #
-ping localhost -n 2 >NUL
-cls
-echo # Checking files...
-echo # %divider%
-echo # %flchkdsc%
-echo #
-echo #
-echo # Running..
-ping localhost -n 2 >NUL
-cls
-echo # Checking files...
-echo # %divider%
-echo # %flchkdsc%
-echo #
-echo #
 echo # Running...
 echo #
 ping localhost -n 2 >NUL
-tree
-timeout /t 3 /nobreak> null
 goto aDiskClean
 
 REM =============================
@@ -162,18 +146,11 @@ REM =============================
 :aDiskClean
 cls
 title %appname% PC Cleaner %appvers% - %appstat% [DiskClean]
-echo # Auto Cleaning. [Disk Cleanup]
 echo # %divider%
-echo # Running.
-echo #
-ping localhost -n 2 >NUL
-cls
-echo # Auto Cleaning.. [Disk Cleanup]
+echo # %appname% PC Cleaner %appvers% - %appstat%
+echo # by %dev%
 echo # %divider%
-echo # Running..
-ping localhost -n 2 >NUL
-cls
-echo # Auto Cleaning... [Disk Cleanup]
+echo # [%clean_method%- %clean_action%] [Disk Cleanup]
 echo # %divider%
 echo # Running...
 echo #
@@ -188,17 +165,11 @@ REM =============================
 :aDefrag
 cls
 title %appname% PC Cleaner %appvers% - %appstat% [Defragment]
-echo # Auto Cleaning. [Defragment]
 echo # %divider%
-echo # Running.
-ping localhost -n 2 >NUL
-cls
-echo # Auto Cleaning.. [Defragment]
+echo # %appname% PC Cleaner %appvers% - %appstat%
+echo # by %dev%
 echo # %divider%
-echo # Running..
-ping localhost -n 2 >NUL
-cls
-echo # Auto Cleaning... [Defragment]
+echo # [%clean_method%- %clean_action%] [Defragment]
 echo # %divider%
 echo # Running...
 echo #
@@ -213,19 +184,13 @@ REM =============================
 :aSystemFileChecker
 cls
 title %appname% PC Cleaner %appvers% - %appstat% [System File Checker]
-echo # Auto System File Checker.   [Scanning PC]
 echo # %divider%
-echo # Running.
-ping localhost -n 2 >NUL
-cls
-echo # Auto System File Checker..  [Scanning PC]
+echo # %appname% PC Cleaner %appvers% - %appstat%
+echo # by %dev%
 echo # %divider%
-echo # Running.
-ping localhost -n 2 >NUL
-cls
-echo # Auto System File Checker... [Scanning PC]
+echo # [%clean_method%- %clean_action%] [Scanning PC]
 echo # %divider%
-echo # Running.
+echo # Running...
 ping localhost -n 2 >NUL
 sfc /scannow
 goto aRecyleBin
@@ -236,17 +201,11 @@ REM =============================
 :aRecyleBin
 cls
 title %appname% PC Cleaner %appvers% - %appstat% [Cleaning Recycle Bin]
-echo # Auto Cleaning.   [Recycle Bin]
 echo # %divider%
-echo # Running.
-ping localhost -n 2 >NUL
-cls
-echo # Auto Cleaning..  [Recycle Bin]
+echo # %appname% PC Cleaner %appvers% - %appstat%
+echo # by %dev%
 echo # %divider%
-echo # Running..
-ping localhost -n 2 >NUL
-cls
-echo # Auto Cleaning... [Recycle Bin]
+echo # [%clean_method%- %clean_action%] [Recycle Bin]
 echo # %divider%
 echo # Running...
 echo #
@@ -261,17 +220,11 @@ REM =============================
 :aTempClean
 cls
 title %appname% PC Cleaner %appvers% - %appstat% [Cleaning Temp]
-echo # Auto Cleaning. [Temp Folder]
 echo # %divider%
-echo # Running.
-ping localhost -n 2 >NUL
-cls
-echo # Auto Cleaning.. [Temp Folder]
+echo # %appname% PC Cleaner %appvers% - %appstat%
+echo # by %dev%
 echo # %divider%
-echo # Running..
-ping localhost -n 2 >NUL
-cls
-echo # Auto Cleaning... [Temp Folder]
+echo # [%clean_method%- %clean_action%] [Temp Folder]
 echo # %divider%
 echo # Running...
 echo #
@@ -288,19 +241,11 @@ REM =============================
 :aPrefetch
 cls
 title %appname% PC Cleaner %appvers% - %appstat% [Cleaning Prefetch]
-echo # Auto Cleaning. [Prefetch Folder]
 echo # %divider%
-echo # Running.
-echo # 
-ping localhost -n 2 >NUL
-cls
-echo # Auto Cleaning.. [Prefetch Folder]
+echo # %appname% PC Cleaner %appvers% - %appstat%
+echo # by %dev%
 echo # %divider%
-echo # Running..
-echo # 
-ping localhost -n 2 >NUL
-cls
-echo # Auto Cleaning... [Prefetch Folder]
+echo # [%clean_method%- %clean_action%] [Prefetch Folder]
 echo # %divider%
 echo # Running...
 echo # 
@@ -317,19 +262,11 @@ REM =============================
 :aWindowsLogs
 cls
 title %appname% PC Cleaner %appvers% - %appstat% [Cleaning Windows Logs]
-echo # Auto Cleaning. [Windows Logs]
 echo # %divider%
-echo # Running.
-echo #
-ping localhost -n 2 >NUL
-cls
-echo # Auto Cleaning.. [Windows Logs]
+echo # %appname% PC Cleaner %appvers% - %appstat%
+echo # by %dev%
 echo # %divider%
-echo # Running..
-echo #
-ping localhost -n 2 >NUL
-cls
-echo # Auto Cleaning... [Windows Logs]
+echo # [%clean_method%- %clean_action%] [Windows Logs]
 echo # %divider%
 echo # Running...
 echo #
@@ -366,13 +303,13 @@ echo # %appname% PC Cleaner %appvers%
 echo # by %dev%
 echo # %divider%
 color %uicolor%
-echo #
 echo # The cleaning is almost complete!
 echo # What would you like to do?
-echo # 1 ........ [Shutdown]
-echo # 2 ........ [Reboot]
-echo # 3 ........ [Back to Main Menu] (default)
-echo # 4 ........ [Exit]
+echo #
+echo # Shutdown ................... [1]
+echo # Reboot ..................... [2]
+echo # Back to Main Menu .......... [3] (default)
+echo # Exit ....................... [4]
 echo #
 set/p "addOption=# %cliN%> " || set addOption=3
 if %addOption%==1 goto shutdownOption
