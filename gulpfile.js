@@ -12,8 +12,8 @@ const header  = require("gulp-header");
 
 // gulp paths
 const path = {
-  build: "./prod",
-  source: "./src"
+  build: "./dist",
+  source: "./source"
 };
 
 // white label & copyright label
@@ -47,7 +47,7 @@ const copydata = {
     'REM Licensed Under The MIT License: http://opensource.org/licenses/MIT',
     'REM Copyright (c) <%= new Date().getFullYear() %> <%= author %>',
     'REM ',
-    'REM Facebook: @warengonzagaofficialpage',
+    'REM Facebook: @warengonzagaofficial',
     'REM Twitter: @warengonzaga',
     'REM Github: @warengonzaga',
     'REM Website: warengonzaga.com',
@@ -97,7 +97,7 @@ function copytoroot() {
 // clean production folder
 function cleanprod() {
   return gulp
-    .src('./prod')
+    .src(path.build)
     .pipe(clean());
 }
 
