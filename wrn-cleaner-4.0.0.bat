@@ -1,10 +1,10 @@
 REM =============================
 REM WRN Cleaner - https://github.com/WarenGonzaga/wrn-cleaner
 REM An open source best all-in-one Windows PC cleaner.
-REM Version: 4.0.0
+REM Version: 4.5.0
 REM Github: https://github.com/WarenGonzaga/wrn-cleaner
 REM Licensed Under The MIT License: http://opensource.org/licenses/MIT
-REM Copyright (c) 2021 Waren Gonzaga
+REM Copyright (c) 2022 Waren Gonzaga
 REM 
 REM Facebook: @warengonzagaofficial
 REM Twitter: @warengonzaga
