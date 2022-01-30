@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🙏 Ask The Developer
+    url: https://twitter.com/warengonzaga
+    about: Have a question? Let me know!
+  - name: 🧠 Suggestion
+    url: https://twitter.com/warengonzaga
+    about: Have an idea or suggestion? Let me know!
+  - name: 📚 Documentation
+    url: https://docs.warengonzaga.com/wrn-cleaner
+    about: Official Documentation for WRN Cleaner
