@@ -143,7 +143,7 @@ echo # %divider%
 echo # Running...
 echo #
 ping localhost -n 2 >NUL
-defrag /C /U /V
+defrag /c /o /u /v /h
 timeout /t 3 /nobreak> null
 goto aSystemFileChecker
 

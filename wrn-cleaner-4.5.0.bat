@@ -21,7 +21,7 @@ REM =============================
 REM Setup Variables
 REM =============================
 set appname=WRN
-set appvers=4.0.0
+set appvers=4.5.0
 set appstat=Beta
 set dev=Waren Gonzaga
 set desc=An open source best all-in-one Windows PC cleaner.
@@ -174,7 +174,7 @@ echo # %divider%
 echo # Running...
 echo #
 ping localhost -n 2 >NUL
-defrag /C /U /V
+defrag /c /o /u /v /h
 timeout /t 3 /nobreak> null
 goto aSystemFileChecker
 
