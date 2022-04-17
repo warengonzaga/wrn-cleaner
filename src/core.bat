@@ -1,34 +1,3 @@
-REM =============================
-REM WRN Cleaner - https://github.com/WarenGonzaga/wrn-cleaner
-REM An open source best all-in-one Windows PC cleaner.
-REM Version: 4.0.0
-REM Github: https://github.com/WarenGonzaga/wrn-cleaner
-REM Licensed Under The MIT License: http://opensource.org/licenses/MIT
-REM Copyright (c) 2021 Waren Gonzaga
-REM 
-REM Facebook: @warengonzagaofficial
-REM Twitter: @warengonzaga
-REM Github: @warengonzaga
-REM Website: warengonzaga.com
-REM 
-REM Donate or Support!
-REM https://buymeacoff.ee/warengonzaga
-REM =============================
-
-cls
-@echo off
-REM =============================
-REM Setup Variables
-REM =============================
-set appname=WRN
-set appvers=4.0.0
-set appstat=Beta
-set dev=Waren Gonzaga
-set desc=An open source best all-in-one Windows PC cleaner.
-set uicolor=a
-set infouicolor=b
-set erruicolor=c
-set cliN=$%appname%Cleaner
 set divider======================================
 title %appname% PC Cleaner %appvers% - %appstat%
 
@@ -174,7 +143,7 @@ echo # %divider%
 echo # Running...
 echo #
 ping localhost -n 2 >NUL
-defrag /C /U /V
+defrag /c /o /u /v /h
 timeout /t 3 /nobreak> null
 goto aSystemFileChecker
 

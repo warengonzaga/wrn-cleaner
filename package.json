@@ -1,7 +1,7 @@
 {
   "name": "wrn-cleaner",
-  "version": "4.0.0",
-  "description": "An open source best all-in-one Windows PC cleaner.",
+  "version": "4.5.0",
+  "description": "A maintenance tool that can automatically or manually clean up your Windows machine in a simple and reliable way.",
   "main": "gulpfile.js",
   "scripts": {
     "build": "gulp build",
@@ -10,26 +10,28 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/WarenGonzaga/wrn-cleaner.git"
+    "url": "git+https://github.com/warengonzaga/wrn-cleaner.git"
   },
   "keywords": [
-    "cleaner",
+    "free",
+    "windows",
     "maintenance",
     "optimization",
-    "windows pc"
+    "cleaner",
+    "tool"
   ],
   "author": "Waren Gonzaga",
-  "license": "MIT",
+  "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/WarenGonzaga/wrn-cleaner/issues"
+    "url": "https://github.com/warengonzaga/wrn-cleaner/issues"
   },
-  "homepage": "https://github.com/WarenGonzaga/wrn-cleaner",
-  "github": "https://github.com/WarenGonzaga/wrn-cleaner",
+  "homepage": "https://github.com/warengonzaga/wrn-cleaner",
+  "github": "https://github.com/warengonzaga/wrn-cleaner",
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-clean": "^0.4.0",
     "gulp-header": "^2.0.9",
     "gulp-rename": "^1.4.0"
   },
-  "dependencies": {}
+  "packageManager": "yarn@3.1.1"
 }

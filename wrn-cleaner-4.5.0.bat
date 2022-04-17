@@ -1,18 +1,17 @@
 REM =============================
-REM WRN Cleaner - https://github.com/WarenGonzaga/wrn-cleaner
-REM An open source best all-in-one Windows PC cleaner.
-REM Version: 4.0.0
-REM Github: https://github.com/WarenGonzaga/wrn-cleaner
-REM Licensed Under The MIT License: http://opensource.org/licenses/MIT
-REM Copyright (c) 2021 Waren Gonzaga
+REM WRN Cleaner - https://github.com/warengonzaga/wrn-cleaner
+REM A maintenance tool that can automatically or manually clean up your Windows machine in a simple and reliable way.
+REM Version: 4.5.0
+REM Github: https://github.com/warengonzaga/wrn-cleaner
+REM Licensed under GNU General Public License v3: https://opensource.org/licenses/GPL-3.0
+REM Copyright (c) 2022 Waren Gonzaga
 REM 
-REM Facebook: @warengonzagaofficial
 REM Twitter: @warengonzaga
 REM Github: @warengonzaga
 REM Website: warengonzaga.com
 REM 
 REM Donate or Support!
-REM https://buymeacoff.ee/warengonzaga
+REM https://warengonzaga.com/donate
 REM =============================
 
 cls
@@ -21,14 +20,14 @@ REM =============================
 REM Setup Variables
 REM =============================
 set appname=WRN
-set appvers=4.0.0
-set appstat=Beta
+set appvers=4.5.0
+set appstat=Stable
 set dev=Waren Gonzaga
-set desc=An open source best all-in-one Windows PC cleaner.
+set desc=A maintenance tool that can automatically or manually clean up your Windows machine in a simple and reliable way.
 set uicolor=a
 set infouicolor=b
 set erruicolor=c
-set cliN=$%appname%Cleaner
+set cliN=%appname%Cleaner$
 set divider======================================
 title %appname% PC Cleaner %appvers% - %appstat%
 
@@ -174,7 +173,7 @@ echo # %divider%
 echo # Running...
 echo #
 ping localhost -n 2 >NUL
-defrag /C /U /V
+defrag /c /o /u /v /h
 timeout /t 3 /nobreak> null
 goto aSystemFileChecker
 

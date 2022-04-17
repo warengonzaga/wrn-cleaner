@@ -1,2 +1,14 @@
+# nodejs
 node_modules
+
+# yarn2
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# misc
 prod

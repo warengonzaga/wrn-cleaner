@@ -1,3 +1,33 @@
+REM =============================
+REM WRN Cleaner - https://github.com/warengonzaga/wrn-cleaner
+REM A maintenance tool that can automatically or manually clean up your Windows machine in a simple and reliable way.
+REM Version: 4.5.0
+REM Github: https://github.com/warengonzaga/wrn-cleaner
+REM Licensed under GNU General Public License v3: https://opensource.org/licenses/GPL-3.0
+REM Copyright (c) 2022 Waren Gonzaga
+REM 
+REM Twitter: @warengonzaga
+REM Github: @warengonzaga
+REM Website: warengonzaga.com
+REM 
+REM Donate or Support!
+REM https://warengonzaga.com/donate
+REM =============================
+
+cls
+@echo off
+REM =============================
+REM Setup Variables
+REM =============================
+set appname=WRN
+set appvers=4.5.0
+set appstat=Stable
+set dev=Waren Gonzaga
+set desc=A maintenance tool that can automatically or manually clean up your Windows machine in a simple and reliable way.
+set uicolor=a
+set infouicolor=b
+set erruicolor=c
+set cliN=%appname%Cleaner$
 set divider======================================
 title %appname% PC Cleaner %appvers% - %appstat%
 
@@ -143,7 +173,7 @@ echo # %divider%
 echo # Running...
 echo #
 ping localhost -n 2 >NUL
-defrag /C /U /V
+defrag /c /o /u /v /h
 timeout /t 3 /nobreak> null
 goto aSystemFileChecker
 

@@ -13,7 +13,7 @@ const header  = require("gulp-header");
 // gulp paths
 const path = {
   build: "./dist",
-  source: "./source"
+  source: "./src"
 };
 
 // white label & copyright label
@@ -34,7 +34,7 @@ const whtlbldata = {
     'set uicolor=<%= uicolor %>',
     'set infouicolor=<%= infouicolor %>',
     'set erruicolor=<%= erruicolor %>',
-    'set cliN=$%appname%Cleaner\n',
+    'set cliN=%appname%Cleaner$\n',
   ].join('\n'),
 }
 const copydata = {
@@ -44,16 +44,15 @@ const copydata = {
     'REM <%= description %>',
     'REM Version: <%= version %>',
     'REM Github: <%= github %>',
-    'REM Licensed Under The MIT License: http://opensource.org/licenses/MIT',
+    'REM Licensed under GNU General Public License v3: https://opensource.org/licenses/GPL-3.0',
     'REM Copyright (c) <%= new Date().getFullYear() %> <%= author %>',
     'REM ',
-    'REM Facebook: @warengonzagaofficial',
     'REM Twitter: @warengonzaga',
     'REM Github: @warengonzaga',
     'REM Website: warengonzaga.com',
     'REM ',
     'REM Donate or Support!',
-    'REM https://buymeacoff.ee/warengonzaga',
+    'REM https://warengonzaga.com/donate',
     'REM =============================\n\n',
   ].join('\n'),
 };
