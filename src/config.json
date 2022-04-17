@@ -2,9 +2,9 @@
     "filename":"wrn-cleaner",
     "title":"WRN",
     "version":"4.5.0",
-    "status":"Beta",
+    "status":"Stable",
     "dev":"Waren Gonzaga",
-    "description":"An open source best all-in-one Windows PC cleaner.",
+    "description":"A maintenance tool that can automatically or manually clean up your Windows machine in a simple and reliable way.",
     "uicolor":"a",
     "infouicolor":"b",
     "erruicolor":"c"
