@@ -15,10 +15,10 @@ A maintenance tool that can automatically or manually clean up your Windows mach
 - Defragment (HDD)
 - Retrim (SSD)
 - DiskClean
-- Windows Error Log Cleaner
-- Recycle Bin Cleaner
-- Clean Temp Folder
-- Clean Prefetch Folder
+- Cleans Windows Error Log
+- Cleans Recycle Bin
+- Cleans Temp Folder
+- Cleans Prefetch Folder
 - System File Checker
 - Auto Shutdown and Reboot When Done
 
