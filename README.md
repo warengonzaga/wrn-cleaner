@@ -2,8 +2,6 @@
 
 [![created by](https://img.shields.io/badge/created%20by-Waren%20Gonzaga-blue.svg?longCache=true&style=flat-square)](https://github.com/warengonzaga) [![release](https://img.shields.io/github/release/warengonzaga/wrn-cleaner.svg?style=flat-square)](https://github.com/warengonzaga/wrn-cleaner/releases) [![star](https://img.shields.io/github/stars/warengonzaga/wrn-cleaner.svg?style=flat-square)](https://github.com/warengonzaga/wrn-cleaner/stargazers) [![license](https://img.shields.io/github/license/warengonzaga/wrn-cleaner.svg?style=flat-square)](https://github.com/warengonzaga/wrn-cleaner/blob/main/license)
 
-> 📢 Nominate ([@WarenGonzaga](https://warengonzaga.com)) as **[GitHub Star](https://stars.github.com/nominate)**. If you appreciate his hardwork and dedication to open source.
-
 ---
 
 ![screenshot](.github/ASSETS/screenshot_01.png)
@@ -40,10 +38,10 @@ Please report any issues and bugs by [creating a new issue here](https://github.
 
 ## 🍀 Sponsors and Supporters
 
-> Love what I do? **[Send me some coffees](https://warengonzaga.com/donate)**! ☕☕☕
+> Love what I do? Send me some [love](https://github.com/sponsors/warengonzaga) or [coffee](https://buymeacoff.ee/warengonzaga)!? 💖☕
 >
-> Can't send coffees? 😥 Nominate me for a **[GitHub Star](https://stars.github.com/nominate)** instead!
-> Your coffee donation and support will help me to continue working on open-source projects like this. 🙏😇
+> Can't send love or coffees? 😥 Nominate me for a **[GitHub Star](https://stars.github.com/nominate)** instead!
+> Your support will help me to continue working on open-source projects like this. 🙏😇
 
 ## 📋 Code of Conduct
 
