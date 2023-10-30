@@ -4,7 +4,7 @@ Any contributions are welcome, encouraged, and valued. See the following informa
 
 ## 📋 Code of Conduct
 
-This project and everyone participating in it is governed by the **WRN Cleaner** [Code of Conduct](./CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to <opensource@warengonzaga.com>.
+This project and everyone participating in it is governed by the project's [code of conduct](./code_of_conduct.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to <opensource@warengonzaga.com>.
 
 ## 💖 How to Contribute
 

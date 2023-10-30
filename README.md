@@ -24,13 +24,11 @@ A maintenance tool that can automatically or manually clean up your Windows mach
 
 Download the repository and look for **``"wrn_cleaner-vX.X.X.bat"``** file and open it and run as administrator. All you have to do is to follow the on-screen instructions.
 
-Learn more: _[docs.warengonzaga.com/wrn-cleaner](https://docs.warengonzaga.com/wrn-cleaner)_
-
 ## 🎯 Contributing
 
 Contributions are welcome, create a pull request to this repo and I will review your code. Please consider to submit your pull request to the `dev` branch. Thank you!
 
-Read the project's [contributing guide](./CONTRIBUTING.md) for more info.
+Read the project's [contributing guide](./contributing.md) for more info.
 
 ## 🐛 Issues
 
@@ -45,7 +43,7 @@ Please report any issues and bugs by [creating a new issue here](https://github.
 
 ## 📋 Code of Conduct
 
-Read the project's [code of conduct](./CODE_OF_CONDUCT.md).
+Read the project's [code of conduct](./code_of_conduct.md).
 
 ## 📃 License
 
